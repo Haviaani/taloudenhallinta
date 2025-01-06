@@ -4,7 +4,8 @@ import Menu from '../Menu'
 import Content from '../Content'
 import { FloatingButton } from '../../shared/buttons'
 import { ButtonContainer } from '../../shared/buttons'
-import Items from '../Items/Items'
+import Items from '../Items'
+import Stats from '../Stats'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       <div className={styles.app}>
         <Header />
         <Content>
-         <Items />
+         <Stats />
         </Content>
         <Menu />
       </div>
