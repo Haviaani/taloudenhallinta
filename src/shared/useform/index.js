@@ -1,1 +1,1 @@
-export { default } from './useform.js'
+export { default } from '/useform.js'

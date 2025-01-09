@@ -10,8 +10,9 @@ function ItemForm(props) {
     const submit = () => {
         let storedValues = Object.assign({}, values)
         storedValues.amount = parseFloat(storedValues.amount)
+        storedValues.id = crypto.randomUUID()
         props.onItemSubmit(storedValues)
-        navigate('/')
+        navigate(-1)
     }
 
     const initialState = {
@@ -26,7 +27,7 @@ function ItemForm(props) {
     const {values, handleChange, handleSubmit} = useForm(submit, initialState, false)
 
     const handleCancel = () => {
-        navigate('/')
+        navigate(-1)
     }
 
     return (
