@@ -1,1 +1,1 @@
-export { default } from './uselocalstorage.js'
+export { default } from './uselocalstorage.jsx'
