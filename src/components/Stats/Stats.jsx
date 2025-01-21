@@ -55,6 +55,8 @@ function Stats(props) {
                                    position='inside'
                                    formatter={value => numberFormat.format(value)} />
                     </Pie>
+                    <Legend />
+                    <Tooltip formatter={ value => numberFormat.format(value) } />
                 </PieChart>
             </ResponsiveContainer>
         </div>
