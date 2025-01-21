@@ -6,6 +6,8 @@ function App() {
 
   const [data, setData] = useState(testdata)
 
+  const [typelist, setTypelist] = useState(["Auto", "Puhelin", "Sähkö", "Vero", "Vesi"])
+
   const handleItemDelete = (id) => {
     let copy = data.slice()
     copy = copy.filter(item => item.id !== id)
@@ -34,6 +36,7 @@ function App() {
   return (
     <>
       <AppRouter data={data} 
+                 typelist={typelist}
                  onItemSubmit={handleItemSubmit} 
                  onItemDelete={handleItemDelete} />
     </>
