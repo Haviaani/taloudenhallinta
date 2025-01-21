@@ -1,5 +1,5 @@
 import styles from './EditItem.module.scss'
-import ItemForm from '../ItemForm'
+import ItemForm from '../ItemForm/ItemForm'
 import { useLoaderData } from 'react-router-dom'
 
 function EditItem(props) {

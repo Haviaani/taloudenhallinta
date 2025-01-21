@@ -19,7 +19,7 @@ function Item({data, ...props}) {
 
         period = periodStart.toLocaleDateString(locale) + " - " + periodEnd.toLocaleDateString(locale)
 
-        const days = (periodEnd - periodStart) / (20*60*60*1000)
+        const days = (periodEnd - periodStart) / (24*60*60*1000)
         
         average = numberFormat.format(data.amount / days * 30)
     }
