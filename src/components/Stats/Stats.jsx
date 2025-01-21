@@ -59,6 +59,7 @@ function Stats(props) {
                     <Pie data={piedata} dataKey='amount' nameKey='type'>
                         <LabelList dataKey='amount'
                                    position='inside'
+                                   fill='#fff'
                                    formatter={value => numberFormat.format(value)} />
                                    {piecolors.map(color => <Cell fill={color} key={color} /> )}
                     </Pie>
