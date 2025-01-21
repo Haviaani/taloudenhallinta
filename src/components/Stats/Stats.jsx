@@ -45,7 +45,7 @@ function Stats(props) {
                 <LineChart data={linedata}>
                     <Line dataKey='amount' />
                     <XAxis type='number'
-                           datakey='date'
+                           dataKey='date'
                            domain={['dataMin','dataMax']}
                            tickFormatter={value => new Date(value).toLocaleDateString(locale)} />
                     <YAxis />
